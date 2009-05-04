@@ -100,6 +100,15 @@
     :case-fold-search nil
     :end-not-begin    t)
 
+   (haskell-bird
+    :match-name       haskell-code-bird
+    :submode          haskell-mode
+    :front            "^>"
+    :include-front    t
+    :back             "^>\\|$"
+    :face             mmm-code-submode-face
+    )
+
    (haskell-spec
     :match-name       haskell-spec
     :submode          haskell-mode
